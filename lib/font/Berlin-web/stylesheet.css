@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'berlinitalic';
-    src: url('berlin_-_italic-webfont.woff2') format('woff2'),
-         url('berlin_-_italic-webfont.woff') format('woff');
+    src: url('/lib/font/Berlin-web/berlin_-_italic-webfont.woff2') format('woff2'),
+         url('/lib/font/Berlin-web/berlin_-_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'berlin_boldbold';
-    src: url('berlin_bold-webfont.woff2') format('woff2'),
-         url('berlin_bold-webfont.woff') format('woff');
+    src: url('/lib/font/Berlin-web/berlin_bold-webfont.woff2') format('woff2'),
+         url('/lib/font/Berlin-web/berlin_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'berlin_xboldxbold';
-    src: url('berlin_x-bold-webfont.woff2') format('woff2'),
-         url('berlin_x-bold-webfont.woff') format('woff');
+    src: url('/lib/font/Berlin-web/berlin_x-bold-webfont.woff2') format('woff2'),
+         url('/lib/font/Berlin-web/berlin_x-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -40,8 +40,8 @@
 
 @font-face {
     font-family: 'berlinregular';
-    src: url('berlin-webfont.woff2') format('woff2'),
-         url('berlin-webfont.woff') format('woff');
+    src: url('/lib/font/Berlin-web/berlin-webfont.woff2') format('woff2'),
+         url('/lib/font/Berlin-web/berlin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
