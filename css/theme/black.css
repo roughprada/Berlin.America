@@ -4,6 +4,10 @@
  * By Hakim El Hattab, http://hakim.se
  */
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url(../../lib/font/berlin-web/stylesheet.css)
+
+@font-face{font-family: berlinregular; src: url('lib/font/Berlin-web/berlin-webfont.woff');}
+
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -15,7 +19,7 @@ body {
   background-color: #191919; }
 
 .reveal {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: 'berlinregular';
   font-size: 42px;
   font-weight: normal;
   color: #fff; }
@@ -46,11 +50,9 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #fff;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-weight: 600;
+  font-family: 'berlinregular';
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
 
@@ -58,7 +60,9 @@ body {
   font-size: 2.5em; }
 
 .reveal h2 {
-  font-size: 1.6em; }
+  font-size: 1.6em; 
+  font-family: 'berlinregular';
+}
 
 .reveal h3 {
   font-size: 1.3em; }
