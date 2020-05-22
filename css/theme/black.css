@@ -49,19 +49,23 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #fff;
+  color: #000000;
   font-family: 'berlinregular';
   line-height: 1.2;
   letter-spacing: normal;
   text-shadow: none;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  }
 
 .reveal h1 {
-  font-size: 2.5em; }
+  font-family: 'berlin_xboldxbold';
+  font-size: 3.5em;
+  letter-spacing: 20px;
+}
 
 .reveal h2 {
   font-size: 1.6em; 
-  font-family: 'berlinregular';
+  letter-spacing: 10px;
 }
 
 .reveal h3 {
