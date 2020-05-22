@@ -64,15 +64,19 @@ body {
 }
 
 .reveal h2 {
-  font-size: 1.6em; 
-  letter-spacing: 10px;
+font-family: 'berlin_xboldxbold';
+  font-size: 1.0em; 
+  letter-spacing: 4px;
 }
 
 .reveal h3 {
   font-size: 1.3em; }
 
 .reveal h4 {
-  font-size: 1em; }
+font-family: 'berlin_xboldxbold';
+  font-size: 1.0em; 
+  letter-spacing: 4px;
+}
 
 .reveal h1 {
   text-shadow: none; }
