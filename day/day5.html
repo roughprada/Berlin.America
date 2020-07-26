@@ -301,25 +301,27 @@ eg. mapa
 <section data-background-image="../lib/img/5/Eriz_Moreno_Road_to_Berlin_America_0274.JPG" ></section>
 <section data-background-image="../lib/img/5/Eriz_Moreno_Road_to_Berlin_America_0275.JPG" ></section>
 <section data-background-image="../lib/img/5/Eriz_Moreno_Road_to_Berlin_America_0276.JPG" ></section>
+</div>
+</div>
 
+	<script src="../js/reveal.js"></script>
 
-		  </div>
-		</div>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			autoSlide: 5000,
+			loop: true,
+			hash: true,
+			dependencies: [	
+				{ src: '../plugin/markdown/marked.js' },
+				{ src: '../plugin/markdown/markdown.js' },
+				{ src: '../plugin/notes/notes.js', async: true },
+				{ src: '../plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
 
-		<script src="../js/reveal.js"></script>
-
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: '../plugin/markdown/marked.js' },
-					{ src: '../plugin/markdown/markdown.js' },
-					{ src: '../plugin/notes/notes.js', async: true },
-					{ src: '../plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
 </html>
