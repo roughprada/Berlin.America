@@ -1,74 +1,217 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Berlin (America) - day 26</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="../css/reset.css">
-		<link rel="stylesheet" href="../css/reveal.css">
-		<link rel="stylesheet" href="../css/theme/white.css">
+	<title>Berlin (America) - day 26</title>
 
-		<link rel="stylesheet" href="lib/font/Berlin-web/stylesheet.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/reveal.css">
+	<link rel="stylesheet" href="../css/theme/white.css">
+
+	<link rel="stylesheet" href="lib/font/Berlin-web/stylesheet.css">
+
+	<!-- Icons awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="../lib/css/monokai.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../lib/css/monokai.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../css/print/pdf.css' : '../css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
 
-		<style type="text/css">
-			@font-face{font-family: berlinregular; src: url('../lib/font/Berlin-web/berlin-webfont.woff');}
-			@font-face{font-family: berlinitalic; src: url('../lib/font/Berlin-web/berlin_-_italic-webfont.woff');}
-			@font-face{font-family: berlin_boldbold; src: url('../lib/font/Berlin-web/berlin_bold-webfont.woff');}
-			@font-face{font-family: berlin_xboldxbold; src: url('../lib/font/Berlin-web/berlin_x-bold-webfont.woff');}
+	<style type="text/css">
+		@font-face {
+			font-family: berlinregular;
+			src: url('../lib/font/Berlin-web/berlin-webfont.woff');
+		}
 
-			.i4ewOd-pzNkMb-haAclf {
-				display: none!important;
-			}
+		@font-face {
+			font-family: berlinitalic;
+			src: url('../lib/font/Berlin-web/berlin_-_italic-webfont.woff');
+		}
+
+		@font-face {
+			font-family: berlin_boldbold;
+			src: url('../lib/font/Berlin-web/berlin_bold-webfont.woff');
+		}
+
+		@font-face {
+			font-family: berlin_xboldxbold;
+			src: url('../lib/font/Berlin-web/berlin_x-bold-webfont.woff');
+		}
+
+		a:active {
+			font-family: 'berlin_boldbold', Arial, sans-serif;
+			color: white;
+			text-decoration: none;
+		}
+
+		.home {
+			position: fixed;
+			top: 15px;
+			left: 15px;
+			z-index: 100;
+			font-size: 18px;
+		}
+
+		.home a {
+			color: black;
+			text-decoration: none;
+		}
+
+		.home a:hover {
+			color: white;
+			text-decoration: none;
+		}
+
+		.home a:visited {
+			color: black;
+			text-decoration: none;
+		}
+
+		.home a {
+			font-family: 'berlin_boldbold', Arial, sans-serif;
+			color: black;
+			text-decoration: none;
+			letter-spacing: 2px;
+			font-size: 18px;
+		}
+
+		.info {
+			position: fixed;
+			top: 18px;
+			right: 15px;
+			z-index: 100;
+			font-size: 18px;
+		}
+
+		.info a {
+			color: black;
+			text-decoration: none;
+		}
+
+		.info a:hover {
+			color: white;
+			text-decoration: none;
+		}
+
+		.info a:visited {
+			color: black;
+			text-decoration: none;
+		}
+
+		.esc {
+			display: content;
+			position: fixed;
+			bottom: 35px;
+			left: 75px;
+			font-size: 12px;
+			color: #a9a9a9;
+			font-family: 'berlin_boldbold', Arial, sans-serif;
+			text-decoration: none;
+			letter-spacing: 2px;
+			font-size: 14px;
+		}
+
+		/*			.days_mobile {
+				display: none;
+			}*/
+
+		.i4ewOd-pzNkMb-haAclf {
+			display: none !important;
+		}
+
+		.days {
+			width: 98%;
+			color: white;
+			position: absolute;
+			z-index: 1;
+			background-color: #b02924;
+			text-align: center;
+			line-height: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 15px;
+			min-height: 25px;
+		}
+
+		.days_inner {
+			text-align-last: justify;
+			width: 93%;
+		}
+
+		.days a {
+			font-family: 'berlin_boldbold', Arial, sans-serif;
+			color: black;
+			text-decoration: none;
+			letter-spacing: 2px;
+			font-size: 18px;
+		}
+
+		.days a:hover {
+			font-family: 'berlin_boldbold', Arial, sans-serif;
+			color: white;
+			text-decoration: none;
+		}
+
+		.days a:active {
+			font-family: 'berlin_boldbold', Arial, sans-serif;
+			color: white;
+			text-decoration: none;
+		}
+
+		.days_mobile {
+			display: none;
+		}
+
+		@media screen and (max-width: 900px) {
 			.days {
-				width: 98%;
-				color: white;
-				position: absolute;
-				z-index: 1;
-				background-color: #b02924;
-				text-align: center;
-				line-height: 20px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				padding: 15px;
+				width: auto;
 			}
-			.days_inner {
-				text-align-last: justify;
-				width: 90%;
-			}
-			.days a{
-			  font-family: 'berlin_boldbold', Arial, sans-serif;
-			  color: black;
-			  text-decoration: none;
-			  letter-spacing: 2px;
-			  font-size: 18px;
-			}
-			.days a:hover{
-			  font-family: 'berlin_boldbold', Arial, sans-serif;
-			  color: white;
-			  text-decoration: none;
-			}
-		</style>
 
-	</head>
-	<body>
-		<div class="days">
-			<div class="days_inner">
+			.days_inner {
+				display: content;
+				width: 80%;
+				line-height: 1.9rem;
+				word-spacing: 10px;
+				text-align: center;
+			}
+
+			.days_mobile {
+				display: none;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="info">
+		<a href="../info.html"><i class="fas fa-info-circle"></i></a>
+	</div>
+	<div class="home">
+		<a href="../index.html" style="font-size: 25px;"><i class="fas fa-building"></i></a>
+	</div>
+	<div class="days">
+		<div class="days_mobile">
+			<p><a>BERLIN Day 26 <i class="fas fa-caret-down"></i></a></p>
+		</div>
+		<div class="esc">
+			<p>Press ESC to see all slides</p>
+		</div>
+		<div class="days_inner">
 				<p>
 					<a href="../index.html" style="font-size: 25px;">●</a> <a href="day1.html">1</a> <a href="day2.html">2</a> <a href="day3.html">3</a> <a href="day4.html">4</a> <a href="day5.html">5</a> <a href="day6.html">6</a> <a href="day7.html">7</a> <a href="day8.html">8</a> <a href="day9.html">9</a> <a href="day10.html">10</a> <a href="day11.html">11</a> <a href="day12.html">12</a> <a href="day13.html">13</a> <a href="day14.html">14</a> <a href="day15.html">15</a> <a href="day16.html">16</a> <a href="day17.html">17</a> <a href="day18.html">18</a> <a href="day19.html">19</a> <a href="day20.html">20</a> <a href="day21.html">21</a> <a href="day22.html">22</a> <a href="day23.html">23</a> <a href="day24.html">24</a> <a href="day25.html">25</a> <a href="day26.html">26</a> <a href="day27.html">27</a> <a href="day28.html">28</a> <a href="day29.html">29</a> <a href="day30.html">30</a> <a href="day31.html">31</a> <a href="day32.html">32</a> <a href="day33.html">33</a> <a href="day34.html">34</a> <a href="day35.html">35</a> <a href="day36.html">36</a> <a href="day37.html">37</a> <a href="day38.html">38</a> <a href="day39.html">39</a> <a href="day40.html">40</a> <a href="day41.html">41</a> <a href="day42.html">42</a> <a href="day43.html">43</a>
 				</p>
