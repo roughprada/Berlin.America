@@ -176,17 +176,18 @@
 			display: none;
 		}
 
-		@media screen and (min-width: 900px) {
+		@media screen and (min-width: 750px) {
 			.days {
-				width: auto;
+				width: 98%;
 			}
 
 			.days_inner {
 				display: content;
-				width: 80%;
+				width: 94%;
 				line-height: 1.9rem;
-				word-spacing: 10px;
+				word-spacing: 	4px;
 				text-align: center;
+				margin: 0px 40px
 			}
 
 			.days_mobile {
@@ -197,8 +198,9 @@
 			}
 		}
 
-		@media screen and (max-width: 600px) {
+		@media screen and (max-width: 750px) {
 			.days {
+				width: 100%;
 			}
 
 			.days_inner {
@@ -212,6 +214,13 @@
 			.esc {
 				display: none;
 			}
+			.info {
+				position: fixed;
+				top: 25px;
+				right: 15px;
+				z-index: 100;
+				font-size: 18px;
+			}
 			.days_mobile #days_drawers {
 				display: none;
 			}
@@ -220,7 +229,8 @@
 			  overflow: hidden;
 			  background-color: #b02924;
 			  position: relative;
-			  width: 80%;
+			  width: 100%;
+    		  margin: 0px 55px 0px 35px;
 			}
 
 			.topnav #days_drop {
@@ -243,7 +253,7 @@
 			  display: block;
 			  right: 0;
 			  top: 0;
-
+    		  margin: 10px 0px;
 			}
 
 			.topnav a:hover {
