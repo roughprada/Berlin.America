@@ -9,6 +9,7 @@
 
 
 
+
 @font-face {
     font-family: 'berlin_boldbold';
     src: url('/lib/font/Berlin-web/berlin_bold-webfont.woff2') format('woff2'),
@@ -18,12 +19,7 @@
 
 }
 
-@media (max-width:700px){
-p {
-  text-align: justify;
-  text-justify: inter-word;
-  }
-}
+
 
 
 @font-face {
