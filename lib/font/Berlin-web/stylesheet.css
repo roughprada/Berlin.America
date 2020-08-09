@@ -18,6 +18,14 @@
 
 }
 
+@media (max-width:500px){
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  }
+}
+
+
 @font-face {
     font-family: 'berlin_xboldxbold';
     src: url('/lib/font/Berlin-web/berlin_x-bold-webfont.woff2') format('woff2'),
