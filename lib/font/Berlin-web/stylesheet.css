@@ -18,7 +18,7 @@
 
 }
 
-@media (max-width:500px){
+@media (max-width:700px){
 p {
   text-align: justify;
   text-justify: inter-word;
